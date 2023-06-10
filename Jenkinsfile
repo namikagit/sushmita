@@ -11,9 +11,9 @@ pipeline {
                          sh '/home/namika/Documents/devops-tools/apache-maven-3.8.8/bin/mvn install'
                            }} 
                     stage('Deployment'){
-                       steps
+                            steps  {
 
-                       sh 'cp target/Instagram.war /home/namika/Documents/devops-tools/apache-tomcat-9.0.73/webapps'
+                       sh 'cp target/sushmita.war /home/namika/Documents/devops-tools/apache-tomcat-9.0.73/webapps'
                  }
 }}}
 
